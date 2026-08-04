@@ -82,6 +82,8 @@ fabcrew-automation/
 ├── test-results/
 ├── tests/
 ├── utils/
+├── .env
+├── .env.example
 ├── .gitignore
 ├── package-lock.json
 ├── package.json
