@@ -17,6 +17,11 @@ jobs:
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
+    - name: Debug env vars
+      run: |
+        echo "BASE_URL is set: ${{ secrets.BASE_URL != '' }}"
+        echo "ADMIN_EMAIL is set: ${{ secrets.ADMIN_EMAIL != '' }}"
+        echo "ADMIN_PASSWORD is set: ${{ secrets.ADMIN_PASSWORD != '' }}"
     - name: Run Playwright tests
       run: npx playwright test
       env:
