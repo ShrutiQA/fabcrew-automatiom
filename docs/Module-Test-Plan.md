@@ -8,33 +8,27 @@
 
 ---
 
-## Automation Flow
-
-- Launch the browser.
-- Navigate to the Login page.
-- Verify Login page availability.
-- Execute login scenarios.
-- Verify successful login and Dashboard navigation.
-- Generate Playwright HTML report.
-
----
-
 ## Planned Test Scenarios
 
 - Verify Login page loads successfully.
-- Verify Login page UI elements.
+- Verify Login page URL.
+- Verify "Welcome Back" text is displayed.
+- Verify Email field is displayed.
+- Verify Password field is displayed.
+- Verify Login button is displayed.
+- Verify Forgot Password link is displayed.
+- Verify Password Eye icon is displayed.
+- Verify password is masked by default.
+- Verify Show Password functionality.
+- Verify Hide Password functionality.
 - Verify login with valid credentials.
+- Verify successful Dashboard redirection after login.
 - Verify login with invalid credentials.
-- Verify empty field validations.
-- Verify Email field validation.
-- Verify Password field validation.
-- Verify password masking.
-- Verify Show/Hide Password functionality.
-- Verify Login button functionality.
-- Verify Forgot Password navigation.
-- Verify successful Dashboard redirection.
-- Verify browser Back button behavior after login.
-- Verify login using Enter key.
+- Verify "Account not found" toast message is displayed.
+- Verify validation messages when Email and Password fields are left empty.
+- Verify "Password is required" validation message is displayed.
+- Verify login with invalid credentials.
+- Verify "Account not found" message is displayed for non-existing email
+- Verify "Invalid email address" validation message when Email is left empty.
 
 ---
-

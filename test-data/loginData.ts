@@ -4,33 +4,28 @@ export const loginData = {
     password: process.env.ADMIN_PASSWORD!,
   },
 
-  invalidUser: {
-    email: "invalid@example.com",
-    password: "Invalid@123",
+  invalidCredentials: {
+    email: 'invalid@example.com',
+    password: 'Invalid@123',
   },
 
-  invalidEmail: {
-    email: "wrong@example.com",
+  nonExistingAccount: {
+    email: 'nonexistentuser@example.com',
     password: process.env.ADMIN_PASSWORD!,
   },
 
-  invalidPassword: {
-    email: process.env.ADMIN_EMAIL!,
-    password: "WrongPassword123",
-  },
-
   emptyEmail: {
-    email: "",
+    email: '',
     password: process.env.ADMIN_PASSWORD!,
   },
 
   emptyPassword: {
     email: process.env.ADMIN_EMAIL!,
-    password: "",
+    password: '',
   },
 
   emptyCredentials: {
-    email: "",
-    password: "",
+    email: '',
+    password: '',
   },
 };
