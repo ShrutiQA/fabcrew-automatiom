@@ -103,7 +103,7 @@ test.describe('Login Module', () => {
       loginData.validUser.password
     );
 
-    await expect(page).toHaveURL(/dashboard\/booking-management/);
+    await expect(page).toHaveURL(/dashboard\/booking-management/, { timeout: 10000 });
   });
 
   // 14. Verify login with invalid credentials

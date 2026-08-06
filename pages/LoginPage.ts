@@ -32,7 +32,7 @@ export class LoginPage {
 
   async navigateToLogin() {
     await this.page.goto('/');
-    await this.page.waitForLoadState('networkidle');
+    await this.page.waitForURL(/auth\/login/, { timeout: 10000 });
   }
 
   async enterEmail(email: string) {
