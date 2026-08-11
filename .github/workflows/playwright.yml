@@ -9,6 +9,7 @@ on:
     branches:
       - main
       - master
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -16,14 +17,12 @@ permissions:
   id-token: write
 
 jobs:
-
   test:
     name: Run Playwright Tests
     timeout-minutes: 60
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -86,9 +85,11 @@ jobs:
       pages: write
       id-token: write
 
-    steps:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
+    steps:
       - name: Deploy Allure report
         id: deployment
         uses: actions/deploy-pages@v4
-
